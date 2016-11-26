@@ -1,4 +1,4 @@
-#Учебная сборка Loftschool (выпускной проект №1) 
+#Учебный проект #1 - portfolio by Igor Yaitsky
 
 Stack:
  - Gulp 4.0
