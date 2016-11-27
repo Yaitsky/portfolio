@@ -1,13 +1,13 @@
 block variables
 
 doctype html
-html
+html(lang=ru-Ru)
   head
     meta(charset="utf-8")
     title #{title}
-    meta(content="" name="author")
-    meta(content="" name="description")
-    meta(content="" name="keywords")
+    meta(content="Igor Yaitsky" name="author")
+    meta(content="Portfolio 2016 by Loftschool Web-Advanced" name="description")
+    meta(content="Portfolio, Igor Yaitsky" name="keywords")
     meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
 
@@ -24,4 +24,5 @@ html
     <![endif]-->
 
   body
+    include _mixins/_svg-mixin.pug
     block content

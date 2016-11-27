@@ -1,0 +1,38 @@
+div.welcome-wrapper
+    div.welcome
+        div.welcome__auth-text Авторизуйтесь
+        div.welcome__hr
+        form.welcome__form(method="post")
+            div.welcome__form-row
+                label.welcome__form-block
+                    div.welcome__form-label
+                        +icon('login','welcome-form-mod')
+                    input.welcome__form-input(type="text", name="login", placeholder="Логин")
+            div.welcome__form-row
+                label.welcome__form-block
+                    div.welcome__form-label
+                        +icon('password','welcome-form-mod')
+                    input.welcome__form-input(type="password", name="password", placeholder="Пароль")
+            div.welcome__form-row
+                label.welcome__form-radio
+                    input.welcome__check-elem(type="checkbox", name="man")
+                    div.welcome__check-fake
+                        +icon('check', 'welcome-man-mod')
+                    div.welcome__radio-text Я человек
+            div.welcome__form-row
+                div.welcome__form-question Вы точно не робот?
+            div.welcome__form-row
+                label.welcome__form-radio
+                    input.welcome__radio-elem(type="radio", name="robot")
+                    div.welcome__radio-fake
+                    div.welcome__radio-text Да
+                label.welcome__form-radio(class="welcome__form-radio-int")
+                    input.welcome__radio-elem(type="radio", name="robot")
+                    div.welcome__radio-fake
+                    div.welcome__radio-text Не уверен
+            ul.welcome-menu__list
+                li.welcome-menu__item(class="welcome-menu__item-main")
+                    a.welcome-menu__link(href="index.html") На главную
+                li.welcome-menu__item(class="welcome-menu__item-submit")
+                    input.welcome__submit(type="submit", value="Войти")
+    div.welcome-footer &copy; Игорь Яицкий | создано с любовью в Loftschool | 2016

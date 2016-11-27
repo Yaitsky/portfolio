@@ -6,11 +6,8 @@ body {
 @import "../fonts/roboto/roboto";
 @import "../fonts/sansus/sansus";
 
-@import "_blocks/_spritepng";
 @import "_misc/_sprite";
+@import "_blocks/_spritepng";
 
-@import 'common/greating';
-
-
-
+@import '_blocks/_welcome_page.scss';
 
