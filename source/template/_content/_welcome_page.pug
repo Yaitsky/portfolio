@@ -1,23 +1,23 @@
-div.welcome-wrapper
+div.first-screen-wrapper
     div.welcome
         div.welcome__logo
         h1.welcome__name Игорь Яицкий
         div.welcome__desc Личный сайт веб-разработчика
-        ul.welcome-social__list
-            li.welcome-social__item
-                a.welcome-social__link(href="http://vk.com/yaickiu", target="_blank")
-                    +icon('vk','welcome-social-mod-vk')
-            li.welcome-social__item
-                a.welcome-social__link(href="http://github.com/yaitsky", target="_blank")
-                    +icon('github','welcome-social-mod')
-            li.welcome-social__item
-                a.welcome-social__link(href="http://linkedin.com", target="_blank")
-                    +icon('in','welcome-social-mod')
+        ul.social__list
+            li.social__item
+                a.social__link(href="http://vk.com/yaickiu", target="_blank")
+                    +icon('vk','social-mod-vk')
+            li.social__item
+                a.social__link(href="http://github.com/yaitsky", target="_blank")
+                    +icon('github','social-mod')
+            li.social__item
+                a.social__link(href="http://linkedin.com", target="_blank")
+                    +icon('in','social-mod')
         ul.welcome-menu__list
             li.welcome-menu__item(class="welcome-menu__item-works")
                 a.welcome-menu__link(href="#") Мои работы
             li.welcome-menu__item(class="welcome-menu__item-about")
-                a.welcome-menu__link(href="#") Обо мне
+                a.welcome-menu__link(href="about.html") Обо мне
             li.welcome-menu__item(class="welcome-menu__item-blog")
                 a.welcome-menu__link(href="#") Блог
     div.welcome-footer &copy; Игорь Яицкий | создано с любовью в Loftschool | 2016

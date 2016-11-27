@@ -9,5 +9,8 @@ body {
 @import "_misc/_sprite";
 @import "_blocks/_spritepng";
 
-@import '_blocks/_welcome_page.scss';
+@import "_misc/_layout";
 
+@import '_blocks/_social';
+@import '_blocks/_welcome_page';
+@import '_blocks/_about_page';

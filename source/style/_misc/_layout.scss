@@ -1,0 +1,6 @@
+.clearfix::before, .clearfix::after {
+  content: "";
+  width: 100%;
+  clear: both;
+  display: block;
+}

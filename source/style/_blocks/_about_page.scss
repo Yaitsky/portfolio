@@ -1,0 +1,46 @@
+.first-screen-block {
+  padding:0;
+  background-color:transparent;
+  z-index:10;
+}
+
+.menu {
+  position:absolute;
+  top:35px;
+  right:35px;
+  &-mod {
+    color:white;
+    width:40px;
+    height:35px;
+  }
+}
+
+.screen-arrow {
+  position:absolute;
+  left:50%;
+  bottom:70px;
+  transform: translate(-50%, 0);
+
+  &-mod {
+    width:26px;
+    height:16px;
+    color:rgba(255,255,255,0.7);
+    &:hover {
+      color:rgba(78,136,57,0.7);
+    }
+  }
+}
+
+.bg-portfolio {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+  &-mod {
+    width:1175px;
+    height:313px;
+    color:rgba(255,255,255,0.12);
+    z-index:1;
+  }
+}
