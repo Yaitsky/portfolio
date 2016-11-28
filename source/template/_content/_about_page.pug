@@ -22,7 +22,86 @@ section.first-screen-wrapper
     div.bg-portfolio
         +icon('portfolio_header', 'bg-portfolio-mod')
 
+    div.first-screen-bg
+        svg(viewbox="0 0 1000 100",preserveAspectRatio="none", class="first-screen-decor")
+            polygon.first-screen-decor__left(points="0,0 0,100 500,100 500,98")
+            polygon.first-screen-decor__right(points="1000,0 1000,100 500,100 500,98")
 
 
+section.about.clearfix
+    div.about__left
+        h1.about__title Обо мне
+        div.about__bg
+                +icon('about_header', 'about__bg-mod')
+        div.title-hr.title-hr_gray
+        div.about__logo
+        div.about__mini-title Кто я
+        div.title-hr.title-hr_green
+        div.about__text
+            p Я веб-разработчик из Москвы. Мне 25 лет.  Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+            p Этот сайт я сделал в рамках обучения в Школе онлайн-образования Loftscholl. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
+    div.about__right
+        div.about__mini-title
+            | Чем я могу быть
+            br
+            | вам полезен
+        div.title-hr.title-hr_green
+        div.about__exp-text Больше всего меня привлекает Frontend - разработка, но я также знаком и могу решать несложные задачи на Backend. Но давайте по порядку.
+        div.about__exp-title Frontend
+        ul.exp__list
+            li.exp__item
+                div.exp__name HTML5
+                svg(width="110", height="110" class="g-circles")
+                    circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                    circle(r="45", cx="55", cy="55", stroke="#74a163", class="html5", transform="rotate(-89.9 55 55)")
+            li.exp__item
+                div.exp__name CSS3
+                svg(width="110", height="110" class="g-circles")
+                    circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                    circle(r="45", cx="55", cy="55", stroke="#74a163", class="css3", transform="rotate(-89.9 55 55)")
+            li.exp__item
+                div.exp__name JavaScript & jQuery
+                svg(width="110", height="110" class="g-circles")
+                    circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                    circle(r="45", cx="55", cy="55", stroke="#74a163", class="js", transform="rotate(-89.9 55 55)")
 
+        div.about__exp-title Backend
+        ul.exp__list
+                li.exp__item
+                    div.exp__name PHP
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="php", transform="rotate(-89.9 55 55)")
+                li.exp__item
+                    div.exp__name mySQL
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="mysql", transform="rotate(-89.9 55 55)")
+                li.exp__item
+                    div.exp__name Node.js & npm
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="nodejs", transform="rotate(-89.9 55 55)")
+                li.exp__item
+                    div.exp__name Mongo.db
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="mongo", transform="rotate(-89.9 55 55)")
 
+        div.about__exp-title Workflow
+        ul.exp__list
+                li.exp__item
+                    div.exp__name Git
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="git", transform="rotate(-89.9 55 55)")
+                li.exp__item
+                    div.exp__name Gulp
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="gulp", transform="rotate(-89.9 55 55)")
+                li.exp__item
+                    div.exp__name Bower
+                    svg(width="110", height="110" class="g-circles")
+                        circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
+                        circle(r="45", cx="55", cy="55", stroke="#74a163", class="bower", transform="rotate(-89.9 55 55)")

@@ -45,3 +45,24 @@
   }
 }
 }
+
+.title-hr {
+  width:90px;
+  height:3px;
+
+  &_white {
+    background-color:#ffffff;
+    margin:0 auto 31px;
+  }
+
+  &_gray {
+    background-color:#373e42;
+    margin:0 auto 34px;
+  }
+
+  &_green {
+    background-color:#566358;
+    margin:5px auto 20px;
+  }
+}
+

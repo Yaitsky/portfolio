@@ -20,6 +20,7 @@
   left:50%;
   bottom:70px;
   transform: translate(-50%, 0);
+  z-index: 10;
 
   &-mod {
     width:26px;
@@ -41,6 +42,192 @@
     width:1175px;
     height:313px;
     color:rgba(255,255,255,0.12);
-    z-index:1;
   }
+}
+
+.first-screen-bg {
+  position:absolute;
+  width:100%;
+  top:100%;
+  transform: translate(0, -100%);
+  margin:0;
+  padding:0;
+  font-size:0;
+}
+
+.first-screen-decor {
+  &__left {
+    fill:#ebefe2;
+  }
+  &__right {
+    fill:#f4f5f0;
+  }
+}
+
+.about {
+  width:100vw;
+
+  &__left {
+    float:left;
+    width:50%;
+    background-color:#ebefe2;
+    position:relative;
+  }
+
+  &__title {
+    font-family:'Sansus Webissimo', 'Arial', sans-serif;
+    font-size:63px;
+    line-height:66px;
+    color:#373e42;
+    text-transform:uppercase;
+    text-align:center;
+    position:relative;
+    padding:0;
+    margin:20px 0 5px;
+    z-index:10;
+  }
+
+  &__bg {
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    &-mod {
+      width:357px;
+      height:125px;
+      color:#e2ebd0;
+    }
+  }
+
+  &__logo {
+    width:420px;
+    height:420px;
+    background-image: url('../img/about_logo.jpg');
+    background-position:center center;
+    background-size:cover;
+    z-index:10;
+    margin:0 auto 35px;
+  }
+
+  &__mini-title {
+    font-family:'Sansus Webissimo', 'Arial', sans-serif;
+    font-size:35px;
+    line-height:41px;
+    color:#566358;
+    text-transform:uppercase;
+    text-align:center;
+    margin:20px 0 0 0;
+  }
+
+  &__text {
+    width:415px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size:16px;
+    line-height:24px;
+    margin:0 auto;
+    color:#566358;
+  }
+
+  &__right {
+    float:right;
+    width:50%;
+    background-color:#f4f5f0;
+  }
+
+  &__exp-text {
+    width:90%;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size:16px;
+    line-height:24px;
+    margin:0 auto 25px;
+    color:#566358;
+  }
+
+  &__exp-title {
+    font-family: 'Roboto Medium', 'Arial', sans-serif;
+    font-size:28px;
+    line-height:32px;
+    width:90%;
+    margin:15px auto 0;
+    color:#566358;
+  }
+}
+
+.exp {
+  &__list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    width:90%;
+    margin:0 auto;
+    display:block;
+    padding:20px 0;
+    font-size:0;
+  }
+
+  &__item {
+    display: inline-block;
+    position:relative;
+    margin-right:30px;
+  }
+
+  &__name {
+    font-family: 'Roboto Medium', 'Arial', sans-serif;
+    font-size:13px;
+    line-height:13px;
+    position:absolute;
+    color:#4e8839;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:60px;
+    text-align:center;
+    display:block;
+  }
+}
+
+.g-circles {
+  fill: none;
+  stroke-width: 20;
+}
+
+.html5 {
+  stroke-dasharray: 225 283;
+}
+
+.css3 {
+  stroke-dasharray: 175 283;
+}
+
+.js {
+  stroke-dasharray: 135 283;
+}
+
+.php {
+  stroke-dasharray: 35 283;
+}
+
+.mysql {
+  stroke-dasharray: 5 283;
+}
+
+.nodejs {
+  stroke-dasharray: 75 283;
+}
+
+.mongo {
+  stroke-dasharray: 0 283;
+}
+
+.git {
+  stroke-dasharray: 150 283;
+}
+
+.gulp {
+  stroke-dasharray: 150 283;
+}
+
+.bower {
+  stroke-dasharray: 160 283;
 }
