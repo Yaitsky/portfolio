@@ -9,6 +9,17 @@
   padding:0;
   margin:35px auto 41px;
   text-align:center;
+
+  &_footer {
+    margin:25px auto 0;
+
+    .social-mod:hover {
+      color:rgba(255,255,255,1.0);
+    }
+    .social-mod-vk:hover {
+      color:rgba(255,255,255,1.0);
+    }
+  }
 }
 
 &__item {

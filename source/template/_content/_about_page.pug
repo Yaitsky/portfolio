@@ -39,7 +39,7 @@ section.about.clearfix
         div.title-hr.title-hr_green
         div.about__text
             p Я веб-разработчик из Москвы. Мне 25 лет.  Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-            p Этот сайт я сделал в рамках обучения в Школе онлайн-образования Loftscholl. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
+            p Этот сайт я сделал в рамках обучения в Школе онлайн-образования Loftschool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
     div.about__right
         div.about__mini-title
             | Чем я могу быть
@@ -105,3 +105,59 @@ section.about.clearfix
                     svg(width="110", height="110" class="g-circles")
                         circle(r="45", cx="55", cy="55", stroke="#dfdcd5", fill="none")
                         circle(r="45", cx="55", cy="55", stroke="#74a163", class="bower", transform="rotate(-89.9 55 55)")
+
+
+section.map-wrapper
+    div#map
+    div.contacts
+        div.about__mini-title Контакты
+        div.title-hr.title-hr_green
+        ul.contacts__list
+            li.contacts__item
+                a.contacts__link(href="#")
+                    +icon('skype', 'contacts__link-mod')
+                    | yaickiu1806
+            li.contacts__item
+                a.contacts__link(href="#")
+                    +icon('envelope2', 'contacts__link-mod')
+                    | yaickiu@gmail.com
+            li.contacts__item
+                a.contacts__link(href="#")
+                    +icon('phone2', 'contacts__link-mod')
+                    | +7(926)394-95-09
+            li.contacts__item
+                a.contacts__link(href="#")
+                    +icon('map_marker', 'contacts__link-mod')
+                    | г. Москва, Таганская площадь, 88
+
+
+    footer.footer
+        div.footer__row.clearfix
+            .footer__col
+                .footer__text Этот сайт я сделал в рамках обучения в Школе онлайн-образования Loftschool
+            .footer__line
+            .footer__col
+                ul.footer__list
+                    li.footer__item
+                        a.footer__link(href="works.html") Мои работы
+                    li.footer__item
+                        a.footer__link(href="about.html") Обо мне
+                    li.footer__item
+                        a.footer__link(href="blog.html") Блог
+                    li.footer__item
+                        a.footer__link(href="login.html") Авторизация
+                ul.social__list.social__list_footer
+                    li.social__item
+                        a.social__link(href="http://vk.com/yaickiu", target="_blank")
+                            +icon('vk','social-mod-vk')
+                    li.social__item
+                        a.social__link(href="http://github.com/yaitsky", target="_blank")
+                            +icon('github','social-mod')
+                    li.social__item
+                        a.social__link(href="http://linkedin.com", target="_blank")
+                            +icon('in','social-mod')
+            .footer__line
+            .footer__col
+                .footer__quote Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете
+                .footer__autor &mdash; Martin Golding
+        div.footer__copy &copy; Игорь Яицкий | создано с любовью в Loftschool | 2016
