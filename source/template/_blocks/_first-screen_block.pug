@@ -1,0 +1,28 @@
+section.first-screen-wrapper
+    div.welcome.first-screen-block
+        div.welcome__logo
+        h1.welcome__name Игорь Яицкий
+        div.welcome__desc Личный сайт веб-разработчика
+    div.social
+        ul.social__list
+            li.social__item
+                a.social__link(href="http://vk.com/yaickiu", target="_blank")
+                    +icon('vk','social-mod-vk-white')
+            li.social__item
+                a.social__link(href="http://github.com/yaitsky", target="_blank")
+                    +icon('github','social-mod-white')
+            li.social__item
+                a.social__link(href="http://linkedin.com", target="_blank")
+                    +icon('in','social-mod-white')
+    div.menu
+        +icon('hamburger','menu-mod')
+    div.screen-arrow
+        a.bg-poftfolio__link(href="#")
+            +icon('arrow_down','screen-arrow-mod')
+    div.bg-header
+        +icon('portfolio_header', 'bg-header-pf-mod')
+
+    div.first-screen-bg
+        svg(viewbox="0 0 1000 100",preserveAspectRatio="none", class="first-screen-decor")
+            polygon.first-screen-decor__left(points="0,0 0,100 500,100 500,98")
+            polygon.first-screen-decor__right(points="1000,0 1000,100 500,100 500,98")

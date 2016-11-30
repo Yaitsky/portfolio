@@ -1,0 +1,16 @@
+section.first-screen-wrapper.first-screen-wrapper_blog
+    div.welcome.first-screen-block.welcome.first-screen-block_blog
+        div.welcome__logo
+        h1.blog-title Блог
+        div.title-hr.title-hr_white
+        div.welcome__desc Статьи, которые я написал
+
+    div.menu
+        +icon('hamburger','menu-mod')
+    div.bg-header
+        +icon('blog_header', 'bg-header-blog-mod')
+
+    div.first-screen-bg
+        svg(viewbox="0 0 1000 100",preserveAspectRatio="none", class="first-screen-decor")
+            polygon.first-screen-decor__blog(points="0,0 0,100 500,100 500,98")
+            polygon.first-screen-decor__blog(points="1000,0 1000,100 500,100 500,98")
