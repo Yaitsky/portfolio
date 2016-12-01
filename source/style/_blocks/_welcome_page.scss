@@ -1,6 +1,7 @@
 .first-screen-wrapper {
   width:100vw;
   height:100vh;
+  min-height:600px;
   background-image: url('../img/welcome_bg.jpg');
   background-position:center center;
   background-size:cover;
@@ -47,6 +48,7 @@
     color:rgba(255,255,255,0.8);
     text-align:center;
     margin-top:10px;
+    font-weight:100;
   }
 
   &-menu__list {

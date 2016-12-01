@@ -1,0 +1,50 @@
+include ../_blocks/_first-screen_works
+
+section.works
+    h1.works__title Мои работы
+    div.works__bg
+        +icon('works_header', 'about__bg-mod')
+    div.title-hr
+    div.works-slider.clearfix
+        div.works-slider__left
+
+        div.works-slider__right
+
+section.feedback
+    h1.works__title Что обо мне
+                    br
+                    | говорят
+    div.feedback__bg
+        +icon('about_header', 'about__bg-mod')
+    div.title-hr
+    div.comments
+        div.comments__left
+            div.comments__logo.comments__logo_koval
+            div.comments__text.
+                                Этот парень проходил обучение по веб-разработке не где-то,
+                                а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных
+                                ночей
+            div.comments__autor Ковальчук Дмитрий
+            div.comments__autor-desk &mdash; основатель Loftschool
+        div.comments__right
+            div.comments__logo.comments__logo_zar
+            div.comments__text.
+                                Этот код выдержит любые испытания. Только, пожалуйста, не
+                                загружайте сайт на слишком старых браузерах
+            div.comments__autor Зар Захаров
+            div.comments__autor-desk &mdash; преподаватель Loftschool
+
+    div.feedback__block
+        h2.feedback__title
+        div.title-hr
+        form.feedback__form
+            input.feedback__input(type="text", name="name", placeholder="Имя")
+            input.feedback__input(type="email", name="email", placeholder="Email")
+            input.feedback__input(type="textarea", name="email", placeholder="Ваше сообщение")
+            ul.welcome-menu__list
+                li.welcome-menu__item(class="welcome-menu__item-main")
+                    button.welcome__submit(type="submit") Отправить
+                li.welcome-menu__item(class="welcome-menu__item-submit")
+                    button.welcome__submit(type="reset") Очистить
+
+    include ../_blocks/_footer
