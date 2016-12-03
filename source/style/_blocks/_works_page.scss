@@ -1,0 +1,237 @@
+.works {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f9f5;
+  padding-top:30px;
+
+  &__title {
+    font-family: 'Sansus Webissimo', 'Arial', sans-serif;
+    font-size: 63px;
+    line-height: 66px;
+    color: #373e42;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 30px 0 5px;
+    z-index: 10;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:0;
+
+    &-mod {
+      width: 450px;
+      color: rgba(#e2ebd0, 0.5);
+    }
+  }
+}
+
+.feedback {
+  position:relative;
+  width: 100vw;
+  padding:30px 0 188px;
+  background-image:url('../img/works_bg.jpg');
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  &__bg {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-mod {
+      width: 499px;
+      height: 175px;
+      color: rgba(#e2ebd0, 0.5);
+    }
+  }
+
+  &__block {
+    width:380px;
+    margin:50px auto 100px;
+    padding-top:20px;
+    background-color:rgba(#dadbd6,0.5);
+    border-radius:5px;
+    position:relative;
+  }
+
+  &__mini-title {
+    font-family:'Sansus Webissimo', 'Arial', sans-serif;
+    font-size:35px;
+    line-height:41px;
+    color:#566358;
+    text-transform:uppercase;
+    text-align:center;
+    margin:20px 0 0 0;
+  }
+
+  &__form {
+    margin-top:40px;
+  }
+
+  &__input {
+    display:block;
+    height:45px;
+    width:340px;
+    margin:20px auto;
+    padding-left:20px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size:16px;
+    line-height:26px;
+    border:none;
+    border-radius:25px;
+
+    &-text {
+      height:140px;
+      padding-top:10px;
+      resize:none;
+    }
+
+    &:focus {
+      outline:none;
+    }
+  }
+
+  &__list {
+    display:block;
+    list-style-type:none;
+    padding:0;
+    margin:0 0 0 0;
+    width:100%;
+    text-align:center;
+    font-size:0px;
+    border-radius:0 0 5px 5px;
+  }
+
+  &__item {
+    display:inline-block;
+    height:45px;
+    background-color:rgb(108,156,90);
+    opacity:0.8;
+    margin:0;
+    width:calc(50% - 1px);
+    &-left {
+      border-right:1px solid rgba(222,227,231,0.5);
+      border-radius:0 0 0 5px;
+    }
+    &-right {
+      border-left:1px solid rgba(222,227,231,0.5);
+      border-radius:0 0 5px 0;
+    }
+
+  }
+
+  &__button {
+    margin:0;
+    padding:0;
+    display:inline-block;
+    font-family:'Roboto Medium', 'Arial', sans-serif;
+    font-size:16px;
+    line-height:45px;
+    width:100%;
+    height:100%;
+    border:none;
+    background-color:rgb(108,156,90);
+    cursor:pointer;
+    color:#ffffff;
+    &:hover {
+      background-color:#487e38;
+    }
+
+    &-left {
+      border-radius:0 0 0 5px;
+    }
+
+    &-right {
+      border-radius:0 0 5px 0;
+    }
+
+  }
+
+}
+
+.comments {
+  width:960px;
+  margin:25px auto 0;
+
+  &__left {
+    float:left;
+    width:50%;
+    text-align:center;
+    padding:0 25px;
+    box-sizing:border-box;
+  }
+
+  &__right {
+    float:right;
+    width:50%;
+    text-align:center;
+    padding:0 25px;
+    box-sizing:border-box;
+  }
+
+  &__logo {
+    width:78px;
+    height:78px;
+    border-radius:50%;
+    display:inline-block;
+    background-position:center center;
+    background-size:cover;
+
+    &_koval {
+      background-image:url('../img/teacher-1.png');
+    }
+
+    &_zar {
+      background-image:url('../img/teacher-2.png');
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto Thin Italic', 'Arial', sans-serif;
+    font-size:16px;
+    line-height:26px;
+    color:#5d5a55;
+    margin-top:10px;
+    text-align:left;
+    font-style:italic;
+    position:relative;
+
+    &:before {
+      content:'';
+      display:block;
+      position:absolute;
+      width:75px;
+      height:61px;
+      left:0;
+      top:-30px;
+      background-image: url('../img/quotes.png');
+    }
+
+  }
+
+  &__autor {
+    font-family: 'Roboto Bold Italic', 'Arial', sans-serif;
+    font-size:16px;
+    line-height:24px;
+    color:#4e8839;
+    margin-top:10px;
+    font-style:italic;
+
+    &-desk {
+      font-family: 'Roboto Italic', 'Arial', sans-serif;
+      color:#566358;
+      font-size:16px;
+      line-height:24px;
+      font-style:italic;
+    }
+  }
+}

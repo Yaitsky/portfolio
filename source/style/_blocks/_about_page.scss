@@ -72,6 +72,9 @@
   &__blog {
     fill:#faf8f0;
   }
+  &__works {
+    fill: #f8f9f5;
+  }
 }
 
 .about {
@@ -107,7 +110,7 @@
     &-mod {
       width:357px;
       height:125px;
-      color:#e2ebd0;
+      color:rgba(#e2ebd0, 0.5);
     }
   }
 
