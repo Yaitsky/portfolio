@@ -1,7 +1,6 @@
 .works {
   position: relative;
   width: 100vw;
-  height: 100vh;
   background-color: #f8f9f5;
   padding-top:30px;
 
@@ -30,6 +29,198 @@
       color: rgba(#e2ebd0, 0.5);
     }
   }
+
+  &-slider {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height:750px;
+
+    &__left {
+      background-color:#ebefe2;
+      width:50%;
+      display:flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+    }
+
+    &__list {
+      display:block;
+      padding:0;
+      margin:0;
+      list-style-type:none;
+      font-size:0;
+    }
+
+    &__item {
+      text-align:center;
+      margin:0;
+      padding:0;
+    }
+
+    &__title {
+      font-family:'Sansus Webissimo', 'Arial', sans-serif;
+      font-size:35px;
+      line-height:41px;
+      color:#566358;
+      text-transform:uppercase;
+      text-align:center;
+      margin:0;
+    }
+
+    &__desc {
+      font-family:'Roboto Medium', 'Arial', sans-serif;
+      font-size:16px;
+      line-height:26px;
+      color:#4e8839;
+      text-transform:uppercase;
+      text-align:center;
+      margin-top:10px;
+    }
+
+    &__link {
+      text-decoration:none;
+      margin:40px auto 0;
+      text-align:center;
+      display:inline-block;
+      height:45px;
+      font-family:'Roboto Medium', 'Arial', sans-serif;
+      font-size:16px;
+      line-height:45px;
+      color:#fff;
+      background-color:#4e8839;
+      padding:0px 20px;
+      border-radius:25px;
+      vertical-align:middle;
+
+      &:hover {
+        opacity:0.8;
+      }
+
+      &-mod {
+        margin-right:10px;
+        width:20px;
+        height:20px;
+        color:#fff;
+        display:inline-block;
+        vertical-align:middle;
+      }
+    }
+
+    &__right {
+      width:50%;
+      display:flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+    }
+
+    &__logo {
+      height:520px;
+      background-color:#e1e4d7;
+      background-image:url('../img/works_yoga.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    &__buttons {
+      height:230px;
+      display:flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+    }
+
+    &__button {
+      width:50%;
+      position:relative;
+
+      &-mod {
+        width:43px;
+        height:27px;
+        color:rgba(#fff, 0.7);
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+      }
+    }
+
+    &__next {
+      position:absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      background-color:rgba(#b0b7aa, 0.5);
+      z-index:10;
+
+      &:hover {
+        background-color:rgba(#b0b7aa, 0.7);
+        .works-slider__button-mod {
+          color: rgba(#4e8839, 0.7);
+        }
+      }
+    }
+
+    &__prev {
+      position:absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      background-color:rgba(#93998d, 0.5);
+      z-index:10;
+
+      &:hover {
+        background-color:rgba(#93998d, 0.7);
+        .works-slider__button-mod {
+          color: rgba(#4e8839, 0.7);
+        }
+      }
+    }
+
+    &__next-image {
+      position:absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      background-image:url('../img/works_trialog.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    &__prev-image {
+      position:absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      background-image:url('../img/works_loftblog.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+  }
+
+
+
 }
 
 .feedback {
@@ -56,7 +247,7 @@
 
   &__block {
     width:380px;
-    margin:50px auto 100px;
+    margin:50px auto 75px;
     padding-top:20px;
     background-color:rgba(#dadbd6,0.5);
     border-radius:5px;
@@ -156,6 +347,12 @@
 
   }
 
+  &__arrow {
+    display:block;
+    text-align:center;
+    margin-bottom:75px;
+  }
+
 }
 
 .comments {
@@ -235,3 +432,5 @@
     }
   }
 }
+
+

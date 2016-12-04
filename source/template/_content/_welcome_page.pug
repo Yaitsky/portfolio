@@ -1,25 +1,65 @@
 div.first-screen-wrapper
-    div.welcome
-        div.welcome__logo
-        h1.welcome__name Игорь Яицкий
-        div.welcome__desc Личный сайт веб-разработчика
-        ul.social__list
-            li.social__item
-                a.social__link(href="http://vk.com/yaickiu", target="_blank")
-                    +icon('vk','social-mod-vk')
-            li.social__item
-                a.social__link(href="http://github.com/yaitsky", target="_blank")
-                    +icon('github','social-mod')
-            li.social__item
-                a.social__link(href="http://linkedin.com", target="_blank")
-                    +icon('in','social-mod')
-        ul.welcome-menu__list
-            li.welcome-menu__item(class="welcome-menu__item-works")
-                a.welcome-menu__link(href="works.html") Мои работы
-            li.welcome-menu__item(class="welcome-menu__item-about")
-                a.welcome-menu__link(href="about.html") Обо мне
-            li.welcome-menu__item(class="welcome-menu__item-blog")
-                a.welcome-menu__link(href="blog.html") Блог
+    div.flip-container
+        div.flipper
+            div.welcome.welcome_front
+                div.welcome__logo
+                h1.welcome__name Игорь Яицкий
+                div.welcome__desc Личный сайт веб-разработчика
+                ul.social__list
+                    li.social__item
+                        a.social__link(href="http://vk.com/yaickiu", target="_blank")
+                            +icon('vk','social-mod-vk')
+                    li.social__item
+                        a.social__link(href="http://github.com/yaitsky", target="_blank")
+                            +icon('github','social-mod')
+                    li.social__item
+                        a.social__link(href="http://linkedin.com", target="_blank")
+                            +icon('in','social-mod')
+                ul.welcome-menu__list
+                    li.welcome-menu__item(class="welcome-menu__item-works")
+                        a.welcome-menu__link(href="works.html") Мои работы
+                    li.welcome-menu__item(class="welcome-menu__item-about")
+                        a.welcome-menu__link(href="about.html") Обо мне
+                    li.welcome-menu__item(class="welcome-menu__item-blog")
+                        a.welcome-menu__link(href="blog.html") Блог
+
+            div.welcome.welcome_back
+                div.welcome__auth-text Авторизуйтесь
+                div.title-hr.title-hr_white
+                form.welcome__form(method="post")
+                    div.welcome__form-row
+                        label.welcome__form-block
+                            div.welcome__form-label
+                                +icon('login','welcome-form-mod')
+                            input.welcome__form-input(type="text", name="login", placeholder="Логин")
+                    div.welcome__form-row
+                        label.welcome__form-block
+                            div.welcome__form-label
+                                +icon('password','welcome-form-mod')
+                            input.welcome__form-input(type="password", name="password", placeholder="Пароль")
+                    div.welcome__form-row
+                        label.welcome__form-radio
+                            input.welcome__check-elem(type="checkbox", name="man")
+                            div.welcome__check-fake
+                                +icon('check', 'welcome-man-mod')
+                            div.welcome__radio-text Я человек
+                    div.welcome__form-row
+                        div.welcome__form-question Вы точно не робот?
+                    div.welcome__form-row
+                        label.welcome__form-radio
+                            input.welcome__radio-elem(type="radio", name="robot")
+                            div.welcome__radio-fake
+                            div.welcome__radio-text Да
+                        label.welcome__form-radio(class="welcome__form-radio-int")
+                            input.welcome__radio-elem(type="radio", name="robot")
+                            div.welcome__radio-fake
+                            div.welcome__radio-text Не уверен
+                    ul.welcome-menu__list
+                        li.welcome-menu__item(class="welcome-menu__item-main")
+                            a.welcome-menu__link.welcome-menu__link_flip(href="#") На главную
+                        li.welcome-menu__item(class="welcome-menu__item-submit")
+                            button.welcome__submit(type="submit") Войти
+
     div.welcome-footer &copy; Игорь Яицкий | создано с любовью в Loftschool | 2016
     div.welcome-auth
-        a.welcome-auth__link(href="login.html") Авторизация
+        a.welcome-auth__link(href="#") Авторизация

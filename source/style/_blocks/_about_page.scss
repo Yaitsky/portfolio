@@ -3,6 +3,9 @@
   background-color:transparent;
   z-index:10;
   height:auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu {
@@ -13,23 +16,6 @@
     color:white;
     width:40px;
     height:35px;
-  }
-}
-
-.screen-arrow {
-  position:absolute;
-  left:50%;
-  bottom:70px;
-  transform: translate(-50%, 0);
-  z-index: 10;
-
-  &-mod {
-    width:26px;
-    height:16px;
-    color:rgba(255,255,255,0.7);
-    &:hover {
-      color:rgba(78,136,57,0.7);
-    }
   }
 }
 
@@ -80,9 +66,9 @@
 .about {
   width:100vw;
   background-color:#f4f5f0;
+  display:flex;
 
   &__left {
-    float:left;
     width:50%;
     background-color:#ebefe2;
     position:relative;
@@ -135,7 +121,7 @@
   }
 
   &__text {
-    width:415px;
+    width:70%;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size:16px;
     line-height:24px;
@@ -144,7 +130,6 @@
   }
 
   &__right {
-    float:right;
     width:50%;
     background-color:#f4f5f0;
   }

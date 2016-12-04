@@ -5,11 +5,32 @@ section.works
     div.title-hr.title-hr_gray
     div.works__bg
         +icon('works_header', 'works__bg-mod')
-    div.works-slider.clearfix
+    div.works-slider
         div.works-slider__left
+            ul.works-slider__list
+                li.works-slider__item
+                    h2.works-slider__title Сайт школы
+                                           br
+                                           | обучения йоге
+                    div.title-hr.title-hr_green
+                    div.works-slider__desc HTML5, CSS3, JavaScript
+                    a.works-slider__link(href="#")
+                        +icon('link', 'works-slider__link-mod')
+                        | Посмотреть сайт
+
 
         div.works-slider__right
+           div.works-slider__logo
 
+           div.works-slider__buttons
+               div.works-slider__button
+                   a.works-slider__next(href="#")
+                       +icon('portf_arrow_down', 'works-slider__button-mod')
+                   div.works-slider__next-image
+               div.works-slider__button
+                   a.works-slider__prev(href="#")
+                       +icon('portf_arrow_up', 'works-slider__button-mod')
+                   div.works-slider__prev-image
 section.feedback
     h1.works__title Что обо мне
                     br
@@ -46,5 +67,9 @@ section.feedback
                     button.feedback__button.feedback__button-left(type="submit") Отправить
                 li.feedback__item.feedback__item-right
                     button.feedback__button.feedback__button-right(type="reset") Очистить
+
+    div.feedback__arrow
+        a.feedback-arrow(href="#")
+            +icon('arrow_down','feedback-arrow-mod')
 
     include ../_blocks/_footer

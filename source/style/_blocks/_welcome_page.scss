@@ -9,13 +9,44 @@
   position:relative;
   overflow:hidden;
 }
-.welcome {
-  text-align:center;
+
+.flip-container {
   position:absolute;
-  padding:40px 0 0 0;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  width:380px;
+  height:429px;
+  perspective: 1000;
+}
+
+.flipper {
+  position:relative;
+  width:380px;
+  height:429px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  &_on {
+    transform: rotateY(180deg);
+  }
+}
+
+.welcome {
+  &_front {
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+  &_back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+
+  position:absolute;
+  top:0;
+  left:0;
+  text-align:center;
+  padding:20px 0 0 0;
   width:380px;
   background-color:rgba(18,38,32,0.6);
   border-radius:5px;
@@ -24,7 +55,7 @@
   &__logo {
     width:141px;
     height:141px;
-    margin:0 auto;
+    margin:37px auto 0;
     background-image: url('../img/welcome_yaitsky.jpg');
     background-position:center center;
     background-size:cover;
@@ -128,6 +159,11 @@
       border:1px solid rgba(255,255,255,0.9);
       border-radius:20px;
       text-decoration:none;
+      transition: opacity 0.5s;
+      &_off {
+        left:-9999px;
+        opacity:0;
+      }
       &:hover {
         background-color:rgba(78,136,57,0.8);
         border-color:#4e8839;
@@ -142,7 +178,7 @@
     text-transform:uppercase;
     color:#ffffff;
     text-align:center;
-    margin:35px 0 27px 0;
+    margin:15px 0 27px 0;
   }
 
   &__form-row {
