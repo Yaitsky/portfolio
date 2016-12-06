@@ -5,15 +5,122 @@
   z-index:100;
   &__row {
     width:100vw;
-    background-color:rgba(0,0,0,0.85);
+    background-color:rgba(0,0,0,0.75);
     height:147px;
+
+    @include desktop {
+      height:235px;
+    }
+
+    @include tablets {
+      height:265px;
+    }
+
+    @include customone {
+      height:288px;
+    }
+
+    @include phones {
+      height:310px;
+    }
+
+    @include customtwo {
+      height:310px;
+    }
   }
 
   &__col {
-    width:32%;
+    width:34%;
     float:left;
-    padding:20px 30px 0 30px;
+    padding:20px 20px 0 20px;
     box-sizing:border-box;
+    position:relative;
+
+    @include desktop {
+      width:50%;
+      padding:20px 25px 0 25px;
+    }
+
+    @include tablets {
+      padding-top:0;
+      margin-top:25px;
+      width:100%;
+      text-align:center;
+    }
+
+    &_left {
+      width:32%;
+
+      @include desktop {
+        width:50%;
+      }
+
+      @include tablets {
+        width:100%;
+      }
+
+    }
+
+    &_right {
+      width:34%;
+
+      @include desktop {
+        width:100%;
+        margin-top:30px;
+      }
+
+      @include tablets {
+        margin-top:25px;
+      }
+
+    }
+
+    &_hr:after, &_hr:before {
+        content:'';
+        display:block;
+        position:absolute;
+        width:1px;
+        background-color:rgba(255,255,255,0.2);
+        height:95px;
+
+        @include tablets {
+          height:1px;
+          width:90%;
+        }
+    }
+    &_hr:after {
+      left:-10px;
+      top:20px;
+
+      @include tablets {
+        height:2px;
+        top:-15px;
+        left:50%;
+        transform: translate(-50%,0);
+      }
+
+      @include phones {
+        height:1px;
+      }
+
+    }
+    &_hr:before {
+      right:10px;
+      top:20px;
+
+      @include desktop {
+        display:none;
+      }
+
+      @include tablets {
+        display:block;
+        top:calc(100% + 15px);
+        left:50%;
+        transform: translate(-50%,0);
+      }
+
+    }
+
   }
 
   &__text {
@@ -24,6 +131,10 @@
     text-align:left;
     font-weight:normal;
     font-style:normal;
+
+    @include tablets {
+      text-align:center;
+    }
   }
 
   &__list {
@@ -54,14 +165,6 @@
     }
   }
 
-  &__line {
-    width:1px;
-    background-color:rgba(255,255,255,0.2);
-    height:60%;
-    float:left;
-    margin-top:24px;
-  }
-
   &__quote {
     font-size:16px;
     line-height:26px;
@@ -70,6 +173,10 @@
     text-decoration:none;
     text-align:left;
     font-style:italic;
+
+    @include tablets {
+      text-align:center;
+    }
   }
 
   &__autor {
@@ -80,6 +187,10 @@
     text-decoration:none;
     text-align:left;
     font-style:italic;
+
+    @include tablets {
+      text-align:center;
+    }
   }
 
   &__copy {

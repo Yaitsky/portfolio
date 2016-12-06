@@ -18,6 +18,11 @@
   width:380px;
   height:429px;
   perspective: 1000;
+
+  @include phones {
+    width:360px;
+  }
+
 }
 
 .flipper {
@@ -30,6 +35,11 @@
   &_on {
     transform: rotateY(180deg);
   }
+
+  @include phones {
+    width:360px;
+  }
+
 }
 
 .welcome {
@@ -99,28 +109,28 @@
     opacity:0.8;
     margin:0;
     &-works {
-      width:155px;
+      width:42%;
       border-radius:0 0 0 5px;
     }
     &-about {
-      width:126px;
+      width:calc(33% - 4px);
       border-left:2px solid rgba(222,227,231,0.5);
       border-right:2px solid rgba(222,227,231,0.5);
     }
     &-blog {
-      width:95px;
+      width:25%;
       border-radius:0 0 5px 0;
     }
     &:hover {
       background-color:#487e38;
     }
     &-main {
-      width:189px;
+      width:calc(50% - 1px);
       border-radius:0 0 0 5px;
       border-right:2px solid rgba(222,227,231,0.5);
     }
     &-submit {
-      width:189px;
+      width:calc(50% - 1px);
       border-radius:0 0 5px 0;
     }
   }
@@ -145,7 +155,12 @@
     font-size:16px;
     line-height:24px;
     color:rgba(255,255,255,1.0);
+
+    @include phones {
+      bottom:10px;
+    }
   }
+
   &-auth {
     position:absolute;
     top:20px;
@@ -169,6 +184,12 @@
         border-color:#4e8839;
       }
     }
+
+    @include phones {
+      right:50%;
+      transform: translate(50%,0);
+    }
+
   }
 
   &__auth-text {
@@ -344,4 +365,9 @@
       background-color:#487e38;
     }
   }
+
+  @include phones {
+    width:360px;
+  }
+
 }

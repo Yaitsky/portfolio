@@ -1,6 +1,3 @@
-body {
-  margin: 0;
-}
 
 @import "font-awesome/font-awesome";
 @import "../fonts/roboto/roboto";
@@ -9,6 +6,7 @@ body {
 @import "_misc/_sprite";
 @import "_misc/spritepng";
 
+@import '_blocks/media';
 @import "_misc/_layout";
 
 @import '_blocks/_social_decor';
