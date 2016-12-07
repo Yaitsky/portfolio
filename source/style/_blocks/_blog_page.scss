@@ -19,15 +19,75 @@
   position:relative;
   background-color:#faf8f0;
 
+  @include desktop {
+    padding:50px 0 255px;
+  }
+
+  @include laptop {
+    padding:50px 0 255px;
+  }
+
+  @include tablets {
+    padding:50px 0 300px;
+  }
+
+  @include phones {
+    padding:50px 0 330px;
+  }
+
   &__left {
     float:left;
-    width:35%;
+    width:33%;
     text-align:right;
+    position:relative;
+    transition: left 0.3s ease-in-out;
+    box-sizing:border-box;
+
+    &_on {
+
+    }
+
+    &_btn {
+      position:absolute;
+      left:100%;
+      top:50%;
+      transform: translate(0, -50%);
+      display:block;
+      height:60px;
+      width:20px;
+      background-color:rgba(#6c9c5a,0.95);
+      border-radius:0 20px 20px 0;
+      display:none;
+      cursor:pointer;
+
+      @include tablets {
+        display:block;
+      }
+    }
+
+    @include tablets {
+      position:absolute;
+      width:300px;
+      left:-300px;
+      float:none;
+      padding:50px 0;
+      background-color:rgba(#6c9c5a,0.95);
+      border-radius:0 20px 20px 0;
+      box-shadow: -2px 3px 4px rgba(0,0,0,0.4);
+    }
   }
 
   &__right {
     float:right;
-    width:65%;
+    width:67%;
+    padding-left:90px;
+    box-sizing:border-box;
+
+    @include tablets {
+      width:100%;
+      float:none;
+      padding:0;
+    }
   }
 
   &__list {
@@ -35,7 +95,14 @@
     padding:0;
     margin:0;
     display:inline-block;
-    margin:0 90px 0 30px;
+    margin:0 0 0 30px;
+
+    @include tablets {
+      color:#fff;
+      padding-right:15px;
+      margin:0 0 0 15px;
+    }
+
   }
 
   &__item {
@@ -45,8 +112,19 @@
 
     &_active {
       border-right:3px solid #6c9c5a;
+
+      @include tablets {
+        color:#566358;
+        border-right:3px solid transparent;
+      }
+
       .blog__link {
         color:#6c9c5a;
+
+        @include tablets {
+          color:#566358;
+          border-right:3px solid transparent;
+        }
       }
     }
   }
@@ -57,6 +135,10 @@
     line-height: 26px;
     color: #566358;
     text-decoration: none;
+
+    @include tablets {
+      color:#fff;
+    }
   }
 }
 
@@ -69,6 +151,11 @@
   &:last-child {
     padding-bottom:0;
     border-bottom:none;
+  }
+
+  @include tablets {
+    width:90%;
+    margin:0 auto 50px;
   }
 
   &__title {

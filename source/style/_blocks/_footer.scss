@@ -6,27 +6,7 @@
   &__row {
     width:100vw;
     background-color:rgba(0,0,0,0.75);
-    height:147px;
-
-    @include desktop {
-      height:235px;
-    }
-
-    @include tablets {
-      height:265px;
-    }
-
-    @include customone {
-      height:288px;
-    }
-
-    @include phones {
-      height:310px;
-    }
-
-    @include customtwo {
-      height:310px;
-    }
+    padding-bottom:20px;
   }
 
   &__col {
@@ -84,16 +64,20 @@
         height:95px;
 
         @include tablets {
-          height:1px;
+          height:0.072rem;
           width:90%;
         }
+
+      @include phones {
+        height:0.077rem;
+      }
     }
     &_hr:after {
       left:-10px;
       top:20px;
 
       @include tablets {
-        height:2px;
+        height:1px;
         top:-15px;
         left:50%;
         transform: translate(-50%,0);

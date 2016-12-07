@@ -90,6 +90,11 @@
     text-align:center;
     margin-top:10px;
     font-weight:100;
+
+    @include tablets {
+      font-family: 'Roboto Medium Italic', 'Arial', sans-serif;
+      font-style:italic;
+    }
   }
 
   &-menu__list {
@@ -128,6 +133,10 @@
       width:calc(50% - 1px);
       border-radius:0 0 0 5px;
       border-right:2px solid rgba(222,227,231,0.5);
+
+      @include phones {
+        border-right:2px solid rgba(222,227,231,0.5);
+      }
     }
     &-submit {
       width:calc(50% - 1px);
