@@ -6,7 +6,8 @@ section.first-screen-wrapper.first-screen-wrapper_blog
         div.welcome__desc Статьи, которые я написал
 
     div.menu
-        +icon('hamburger','menu-mod')
+        button.c-hamburger.c-hamburger--htx
+            span toggle menu
     div.bg-header
         +icon('blog_header', 'bg-header-blog-mod')
 
@@ -14,3 +15,15 @@ section.first-screen-wrapper.first-screen-wrapper_blog
         svg(viewbox="0 0 1000 100",preserveAspectRatio="none", class="first-screen-decor")
             polygon.first-screen-decor__blog(points="0,0 0,100 500,100 500,98")
             polygon.first-screen-decor__blog(points="1000,0 1000,100 500,100 500,98")
+
+aside.fullscreen-menu
+    nav.fullscreen-menu__block
+        ul.fullscreen-menu__list
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="works.html") Мои работы
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="about.html") Обо мне
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="blog.html") Блог
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="index.html") Авторизация

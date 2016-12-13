@@ -15,7 +15,8 @@ section.first-screen-wrapper
                 a.social__link(href="http://linkedin.com", target="_blank")
                     +icon('in','social-mod-white')
     div.menu
-        +icon('hamburger','menu-mod')
+        button.c-hamburger.c-hamburger--htx
+            span toggle menu
     div.screen-arrow
         a.arrow-link(href="#")
             +icon('arrow_down','screen-arrow-mod')
@@ -26,3 +27,15 @@ section.first-screen-wrapper
         svg(viewbox="0 0 1000 100",preserveAspectRatio="none", class="first-screen-decor")
             polygon.first-screen-decor__works(points="0,0 0,100 500,100 500,98")
             polygon.first-screen-decor__works(points="1000,0 1000,100 500,100 500,98")
+
+aside.fullscreen-menu
+    nav.fullscreen-menu__block
+        ul.fullscreen-menu__list
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="works.html") Мои работы
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="about.html") Обо мне
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="blog.html") Блог
+            li.fullscreen-menu__item
+                a.fullscreen-menu__link(href="index.html") Авторизация

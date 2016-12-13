@@ -113,12 +113,13 @@
     background-color:rgb(108,156,90);
     opacity:0.8;
     margin:0;
+    box-sizing:border-box;
     &-works {
       width:42%;
       border-radius:0 0 0 5px;
     }
     &-about {
-      width:calc(33% - 4px);
+      width:33%;
       border-left:2px solid rgba(222,227,231,0.5);
       border-right:2px solid rgba(222,227,231,0.5);
     }
@@ -130,16 +131,12 @@
       background-color:#487e38;
     }
     &-main {
-      width:calc(50% - 1px);
+      width:50%;
       border-radius:0 0 0 5px;
       border-right:2px solid rgba(222,227,231,0.5);
-
-      @include phones {
-        border-right:2px solid rgba(222,227,231,0.5);
-      }
     }
     &-submit {
-      width:calc(50% - 1px);
+      width:50%;
       border-radius:0 0 5px 0;
     }
   }

@@ -7,14 +7,12 @@ section.works
         +icon('works_header', 'works__bg-mod')
     div.works-slider
         div.works-slider__left
-            ul.works-slider__list
-                li.works-slider__item
-                    h2.works-slider__title
-                    div.title-hr.title-hr_green
-                    div.works-slider__desc HTML5, CSS3, JavaScript
-                    a.works-slider__link(href="#")
-                        +icon('link', 'works-slider__link-mod')
-                        | Посмотреть сайт
+            h2.works-slider__title
+            div.title-hr.title-hr_green
+            div.works-slider__desc HTML5, CSS3, JavaScript
+            a.works-slider__link(href="#")
+                +icon('link', 'works-slider__link-mod')
+                | Посмотреть сайт
 
 
         div.works-slider__right
@@ -36,8 +34,8 @@ section.feedback
     div.feedback__bg
         +icon('about_header', 'works__bg-mod')
     div.title-hr.title-hr_gray
-    div.comments.clearfix
-        div.comments__left
+    div.comments
+        div.comments__block
             div.comments__logo.comments__logo_koval
             div.comments__text.
                                 Этот парень проходил обучение по веб-разработке не где-то,
@@ -45,7 +43,7 @@ section.feedback
                                 ночей
             div.comments__autor Ковальчук Дмитрий
             div.comments__autor-desk &mdash; основатель Loftschool
-        div.comments__right
+        div.comments__block
             div.comments__logo.comments__logo_zar
             div.comments__text.
                                 Этот код выдержит любые испытания. Только, пожалуйста, не

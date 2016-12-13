@@ -4,8 +4,8 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 96px;
-  height: 96px;
+  width: 50px;
+  height: 50px;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -14,6 +14,7 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s;
+  z-index:300;
 }
 
 .c-hamburger:focus {
@@ -23,10 +24,10 @@
 .c-hamburger span {
   display: block;
   position: absolute;
-  top: 44px;
-  left: 18px;
-  right: 18px;
-  height: 8px;
+  top: 22px;
+  left: 5px;
+  right: 5px;
+  height: 5px;
   background: white;
 }
 
@@ -36,23 +37,23 @@
   display: block;
   left: 0;
   width: 100%;
-  height: 8px;
+  height: 5px;
   background-color: #fff;
   content: "";
 }
 
 .c-hamburger span::before {
-  top: -20px;
+  top: -12px;
 }
 
 .c-hamburger span::after {
-  bottom: -20px;
+  bottom: -12px;
 }
 
 
 
 .c-hamburger--htx {
-  background-color: #ff3264;
+  background-color: transparent;
 }
 
 .c-hamburger--htx span {
@@ -69,7 +70,7 @@
 
 /* состояние active при открытом меню  */
 .c-hamburger--htx.is-active {
-  background-color: #cb0032;
+  background-color: transparent;
 }
 
 .c-hamburger--htx.is-active span {
@@ -92,4 +93,3 @@
 .c-hamburger--htx.is-active span::after {
   transition: bottom 0.3s 0s, transform 0.3s 0.3s;
 }
-
